@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+
+// Configuración
+
+@import "./scss/config/reset";
+@import "./scss/config/capas";
+@import "./scss/config/colores";
+@import "./scss/config/breakpoints";
+@import "./scss/config/var-root";
+
+// Secciones
+
+@import "./scss/secciones/header";
+@import "./scss/secciones/container";
+@import "./scss/secciones/main";
+@import "./scss/secciones/footer";
+
+// Layout
+
+@import "./scss/layout/columnas";
+@import "./scss/layout/filas";
+@import "./scss/layout/margenes";
+@import "./scss/layout/padding";
+
+// Textos
+
+@import "./scss/textos/fuentes";
+@import "./scss/textos/titulos";
+@import "./scss/textos/subtitulos";
+@import "./scss/textos/parrafos";
+@import "./scss/textos/menu";
+
+// Elementos
+
+// Animaciones
