@@ -1,5 +1,37 @@
 <div class="Slider">
+  <div class="Slider-item slider-actual">
+    <img src="../../../../assets/img/slider1.jpg" alt="descripcion">
+  </div>
   <div class="Slider-item">
-    <img src="" alt="">
+    <img src="../../../../assets/img/slider2.jpg" alt="descripcion">
+  </div>
+  <div class="Slider-item">
+    <img src="../../../../assets/img/slider3.jpg" alt="descripcion">
+  </div>
+  <div class="anterior"
+       (click)="anterior()"
+       #prev>
+    <i class="fas fa-chevron-left"></i>
+  </div>
+  <div class="siguiente"
+       (click)="siguiente()"
+       #next>
+    <i class="fas fa-chevron-right"></i>
+  </div>
+  <div class="puntos">
+    <span #punto1
+          class="punto punto-activo"
+          (click)="showSlide(0)"></span>
+    <span #punto2
+          class="punto"
+          (click)="showSlide(1)"></span>
+    <span #punto3
+          class="punto"
+          (click)="showSlide(2)"></span>
+  </div>
+  <div class="PlayPause">
+    <i [class]="iconplay"
+       (click)="playPause()"
+       #btnPlay></i>
   </div>
 </div>
