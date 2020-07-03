@@ -1,0 +1,9 @@
+
+
+@mixin cards(){
+  border: 1px solid red;
+}
+
+.card{
+  @include cards();
+}

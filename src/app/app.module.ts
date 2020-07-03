@@ -18,9 +18,10 @@ import { TiendaComponent } from './components/paginas/tienda/tienda.component';
 import { FooterComponent } from './components/secciones/footer/footer.component';
 import { HeaderComponent } from './components/secciones/header/header.component';
 import { NavHeaderComponent } from './components/elementos/nav-header/nav-header.component';
-import { OfertasComponent } from './components/paginas/ofertas/ofertas.component';
+import { OfertasComponent } from './components/elementos/ofertas/ofertas.component';
 import { SliderComponent } from './components/elementos/slider/slider.component';
 import { PortafolioComponent } from './components/elementos/portafolio/portafolio.component';
+import { NosotrosComponent } from './components/elementos/nosotros/nosotros.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { PortafolioComponent } from './components/elementos/portafolio/portafoli
     NavHeaderComponent,
     OfertasComponent,
     SliderComponent,
-    PortafolioComponent
+    PortafolioComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,

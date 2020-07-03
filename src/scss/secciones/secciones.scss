@@ -1,0 +1,10 @@
+
+
+@mixin seccion(){
+  display: block;
+  width: 100%;
+}
+
+.Seccion{
+  @include seccion();
+}
