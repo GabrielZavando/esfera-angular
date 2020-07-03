@@ -9,6 +9,7 @@
 
 # dependencies
 /node_modules
+ada-css.md
 
 # profiling files
 chrome-profiler-events*.json
