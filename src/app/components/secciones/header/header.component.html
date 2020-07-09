@@ -1,8 +1,11 @@
-<header class="Header">
+<header class="Header"
+        #Header
+        [class]="anima"
+        [ngStyle]="{'background': colorHeader}">
   <div class="Logo">
     <a href="#">
-      <img src="../../../../assets/img/logo.svg" alt="Logo Esfera Digital">
+      <img src="../../../../assets/img/logo.png" alt="Logo Esfera Digital">
     </a>
   </div>
- <ed-nav-header></ed-nav-header>
+ <ed-nav-header class="container-nav"></ed-nav-header>
 </header>
