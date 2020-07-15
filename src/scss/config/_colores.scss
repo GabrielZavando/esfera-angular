@@ -9,12 +9,14 @@
 
 
 $colors:(
-  primary: hsl(227, 88%, 60%),
-  secondary: red,
-  footer: hsl(231, 61%, 11%),
+  primary: #1f4386,
+  secondary: #268ea4,
+  tertiary: #5fc3b1,
   tercero: hsl(252, 24%, 16%),
-  tertiary: hsl(179, 100%, 40%),
-  alert: #ab1217
+  footer: #0a1e3b,
+  fondo: #ffff,
+  alert: #ab1217,
+  font-color: #444444
 );
 
 $fondo-transparente: rgba(9, 10, 7, 0.8);

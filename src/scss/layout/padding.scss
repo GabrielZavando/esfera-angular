@@ -2,3 +2,13 @@
 // Para las clases que añaden padding a los elementos
 
 // Crearlas con mixin y variables
+
+$padding-container-secciones: 0 1rem;
+
+.p-container{
+  padding: $padding-container-secciones;
+}
+
+.p-card-footer{
+  padding: 1rem;
+}

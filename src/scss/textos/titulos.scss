@@ -1,2 +1,18 @@
 
 // Para manejar los estilos de los titulos
+
+.titulo-seccion{
+  position: relative;
+  margin: 1rem 0;
+  padding-bottom: .5rem;
+  font-family: $fuente-principal;
+  &:before{
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: color(primary);
+  }
+}
