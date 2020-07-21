@@ -4,18 +4,69 @@
   <h2 class="titulo-seccion">Nosotros</h2>
 </div>
 
-<!-- <div class="column-1-2"> -->
-<div class="Seccion">
+<div class="column-1-2">
 
-  <div class="card">
-    <div class="center">
+  <div class="card-tabs">
+    <ul class="tabs-controls">
+      <li class="tabs-controls-item"
+          [ngClass]="{active: activo === 1}"
+          (click)="activar(1)">Somos</li>
+      <li class="tabs-controls-item"
+          [ngClass]="{active: activo === 2}"
+          (click)="activar(2)">Creemos</li>
+      <li class="tabs-controls-item"
+          [ngClass]="{active: activo === 3}"
+          (click)="activar(3)">Hacemos</li>
+    </ul>
+    <div class="tabs-body">
+
+      <div class="tabs-body-active"
+           *ngIf="activo === 1">
+        <h2>Somos</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere, odit quae perspiciatis, quidem officia maxime laborum omnis eveniet assumenda consequuntur minus nesciunt sed nobis eos minima maiores, repudiandae debitis.
+        </p>
+      </div>
+
+      <div class="tabs-body-active"
+           *ngIf="activo === 2">
+        <h2>Creemos</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere, odit quae perspiciatis, quidem officia maxime laborum omnis eveniet assumenda consequuntur minus nesciunt sed nobis eos minima maiores, repudiandae debitis.
+        </p>
+      </div>
+
+      <div class="tabs-body-active"
+           *ngIf="activo === 3">
+        <h2>Hacemos</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facere, odit quae perspiciatis, quidem officia maxime laborum omnis eveniet assumenda consequuntur minus nesciunt sed nobis eos minima maiores, repudiandae debitis.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="card-img">
+    <img src="../../../../assets/img/trabajo.jpg" alt="Trabajo en equipo">
+  </div>
+
+</div>
+
+
+<!-- <div class="column-1-2"> -->
+<!-- <div class="content"> -->
+
+  <!-- <div class="card"> -->
+
+    <!-- <div class="center">
 
       <div class="btn"
            (click)="cambiar(1)">
         <h3>Somos</h3>
         <div class="article">
           <div class="content-article">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque animi voluptate aliquid unde aliquam fugit nobis, sapiente ab tenetur eaque debitis deleniti, magni consequatur? Cum deleniti consequuntur corrupti! Est!</p>
+            <p>Articulo Somos</p>
           </div>
         </div>
       </div>
@@ -25,7 +76,7 @@
         <h3>Creemos</h3>
         <div class="article">
           <div class="content-article">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque animi voluptate aliquid unde aliquam fugit nobis, sapiente ab tenetur eaque debitis deleniti, magni consequatur? Cum deleniti consequuntur corrupti! Est!</p>
+            <p>Articulo Creemos</p>
           </div>
         </div>
       </div>
@@ -35,18 +86,17 @@
         <h3>Hacemos</h3>
         <div class="article">
           <div class="content-article">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque animi voluptate aliquid unde aliquam fugit nobis, sapiente ab tenetur eaque debitis deleniti, magni consequatur? Cum deleniti consequuntur corrupti! Est!</p>
+            <p>Articulo Hacemos</p>
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
+    </div> -->
 
-  <div class="card">
-    <div class="card-img">
-      <img src="../../../../assets/img/trabajo.jpg" alt="Trabajo en equipo">
-    </div>
-  </div>
+  <!-- </div> -->
 
-</div>
+  <!-- <div class="card">
+
+  </div> -->
+
+<!-- </div> -->
